@@ -39,7 +39,7 @@ jobs:
           curl https://mr-connection-mjkb8f75cpt.messaging.solace.cloud:943/SEMP/v2/config/msgVpns/test_serv_vpn/queues \
                -X POST \
                -H "Content-Type: application/json" \
-               -u "ranardiary2019@gmail.com:bookWorm@08" \
+               -u "ranardiary2019:bookWorm@08" \
                -d '{ 
                 "queueName": "Mars_DevOps_dmq-1",
                 "owner": "default",
