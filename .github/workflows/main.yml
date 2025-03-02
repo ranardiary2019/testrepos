@@ -1,6 +1,6 @@
       - name: Send REST request to Solace
         run: |
-          curl -X POST "http://${{ secrets.SOLACE_HOST }}/TOPIC_NAME" \
+          curl -X POST "http://${{ secrets.SOLACE_HOST }}" \
                -H "Content-Type: text/plain" \
                -u "${{ secrets.SOLACE_USERNAME }}:${{ secrets.SOLACE_PASSWORD }}" \
                -d "Message from GitHub Actions"
