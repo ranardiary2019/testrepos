@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
       - name: Send REST request to Solace
         run: |
-          curl -X POST "mr-connection-mjkb8f75cpt.messaging.solace.cloud:943/#/msg-vpns/dGVzdF9zZXJ2X3Zwbg==/endpoints/queues/" \
+          curl -X POST "mr-connection-mjkb8f75cpt.messaging.solace.cloud:943/#/msg-vpns/dGVzdF9zZXJ2X3Zwbg==/endpoints/queues" \
                -H "Content-Type: application/json" \
                -u "${{ secrets.SOLACE_USERNAME }}:${{ secrets.SOLACE_PASSWORD }}" \
                -d '"Queue": {"create": [
