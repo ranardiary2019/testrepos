@@ -6,9 +6,9 @@
                -d "Message from GitHub Actions"
       - name: Read JSON File
         id: read-json
-        run: echo "JSON_CONTENT=$(cat script.json)" >> $GITHUB_ENV
+        run: echo "JSON_CONT=$(cat script.json)" >> $GITHUB_ENV
 
       - name: Execute JSON content
         run: |
           echo "Executing JSON Script:"
-          echo $JSON_CONTENT
+          echo $JSON_CONT
