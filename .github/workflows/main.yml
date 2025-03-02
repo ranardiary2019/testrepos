@@ -1,12 +1,5 @@
       - name: Send REST request to Solace
-        run: |
-          curl -X POST "http://${{ secrets.SOLACE_HOST }}" \
-               -H "Content-Type: text/plain" \
-               -u "${{ secrets.SOLACE_USERNAME }}:${{ secrets.SOLACE_PASSWORD }}" \
-               -d "Message from GitHub Actions"
-      - name: Read JSON File
-        id: read-json
-        run: echo "JSON_CONT=$(cat script.json)" >> $GITHUB_ENV
+     
 
       - name: Execute JSON content
         run: |
