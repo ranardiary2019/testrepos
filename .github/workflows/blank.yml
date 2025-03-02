@@ -37,7 +37,7 @@ jobs:
       - name: Send REST request to Solace
         run: |
           curl -X POST "https://mr-connection-mjkb8f75cpt.messaging.solace.cloud:9443/SEMP/v2/config/msgVpns/test_serv_vpn/queues" \
-               -u "test-client:bookWorm@08" \
+               -u "ranardiary2019@gmail.com:bookWorm@08" \
                 -H "Content-Type: application/json" \
                -d '{ 
                 "queueName": "Mars_DevOps_dmq-1",
