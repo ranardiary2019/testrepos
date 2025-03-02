@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
       - name: Send REST request to Solace
         run: |
-          curl -X POST "http://${{ secrets.SOLACE_HOST }}" \
+          curl -X POST "https://${{ secrets.SOLACE_HOST }}" \
                -H "Content-Type: text/plain" \
                -u "${{ secrets.SOLACE_USERNAME }}:${{ secrets.SOLACE_PASSWORD }}" \
                -d "Message from GitHub Actions"
