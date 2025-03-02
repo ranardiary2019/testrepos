@@ -44,9 +44,11 @@ jobs:
         run: |
           curl -X POST \
                   https://mr-connection-mjkb8f75cpt.messaging.solace.cloud:9443/SEMP/v2/config/msgVpns/test_serv_vpn/queues \
-              -H "solace-cloud-client:bt9m8739qbuo38am5r8veh5h0l" \
+              -H "test-client:bookWorm@08" \
               -H "Content-Type: application/json" \
-              -d '{ "queueName": "MyTestQueue" }'
+              -d '{ "queueName": "MyTestQueue" }' 
+        - name: test
+            echo -n 'solace-cloud-client:bt9m8739qbuo38am5r8veh5h0l' | base64
     
     
         
