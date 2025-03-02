@@ -39,10 +39,6 @@ jobs:
           curl -v POST "https://mr-connection-mjkb8f75cpt.messaging.solace.cloud:9443/SEMP/v2/config/msgVpns/test_serv_vpn/queues" \
                -u "solace-cloud-client:bt9m8739qbuo38am5r8veh5h0l" \
               -H "Content-Type: application/json" \
-               -d '"Queue": { "create": [ {
-                "queueName": "Mars_DevOps_dmq-1",
-                "owner": "default",
-                "permission": "consume"
-                }] }'
+               -d '{ "queueName": "MyTestQueue" }'
     
         
