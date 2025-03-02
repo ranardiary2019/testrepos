@@ -43,9 +43,9 @@ jobs:
 
         run: |
           curl -X POST \
-                  https://mr-connection-mjkb8f75cpt.messaging.solace.cloud:9443/SEMP/v2/config/msgVpns/test_serv_vpn/queues
+                  https://mr-connection-mjkb8f75cpt.messaging.solace.cloud:9443/SEMP/v2/config/msgVpns/test_serv_vpn/queues \
              #  -u "solace-cloud-client:bt9m8739qbuo38am5r8veh5h0l" \
-              -H "solace-cloud-client:bt9m8739qbuo38am5r8veh5h0l" \
+              -u "solace-cloud-client:bt9m8739qbuo38am5r8veh5h0l" \
               -H "Content-Type: application/json" \
               -d '{ "queueName": "MyTestQueue" }'
     
