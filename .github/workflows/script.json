@@ -1,0 +1,10 @@
+{
+"Queue": {
+        "create": [
+            {
+                "queueName": "Mars_DevOps_dmq-1",
+                "owner": "default",
+                "permission": "consume"
+            }
+        ]
+}
