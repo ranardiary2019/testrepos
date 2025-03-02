@@ -36,7 +36,7 @@ jobs:
           echo test, and deploy your project.
       - name: Send REST request to Solace
         run: |
-          curl -X POST "https://${{ secrets.SOLACE_HOST }}/SEMP/v2/config/msgVpns/default/queues" \
+          curl -X POST "https://${{ secrets.SOLACE_HOST }}/SEMP/v2/config/test_serv_vpn/default/queues" \
                -H "Content-Type: application/json" \
                -u "${{ secrets.SOLACE_USERNAME }}:${{ secrets.SOLACE_PASSWORD }}" \
                -d '{
