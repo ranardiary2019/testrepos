@@ -39,7 +39,7 @@ jobs:
           curl -X POST "https://mr-connection-mjkb8f75cpt.messaging.solace.cloud:9443/SEMP/v2/config/msgVpns/test_serv_vpn/queues" \
                -u "admin:admin" \
             -H "Content-Type: application/json" \
-             -d '{ "queueName": "MyTestQueue" }'
+             -d '{ "queueName": "MyTestQueue" }
 
        
     
