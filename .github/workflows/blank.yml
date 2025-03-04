@@ -37,9 +37,9 @@ jobs:
       - name: Send REST request to Solace
         run: |
           curl -X POST "https://mr-connection-mjkb8f75cpt.messaging.solace.cloud:9443/SEMP/v2/config/msgVpns/test_serv_vpn/queues" \
-               -u "admin:admin" \
-            -H "Content-Type: application/json" \
-             -d '{ "queueName": "MyTestQueue" }
+               -H "Content-Type: application/json" \
+               -u "${{ secrets.SOLACE_USER }}:${{ secrets.SOLACE_PASSWORD }}" \
+               -d '{ "queueName": "MyTestQueue" }'
 
        
     
